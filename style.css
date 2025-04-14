@@ -1,0 +1,69 @@
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="file"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+canvas {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#download-btn {
+  display: none;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #e91e63, #f06292);
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+  transition: all 0.3s ease;
+}
+
+#download-btn:hover {
+  background: linear-gradient(135deg, #c2185b, #ec407a);
+  box-shadow: 0 6px 16px rgba(233, 30, 99, 0.6);
+  transform: scale(1.05);
+}

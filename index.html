@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Générateur de badge</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Générateur de badge</h2>
+    <form id="badgeForm">
+      <input type="text" id="name" placeholder="Nom complet" required>
+      <input type="text" id="fonction" placeholder="Fonction" required>
+      <input type="text" id="promo" placeholder="Année de promotion" required>
+      <input type="file" id="photo" accept="image/*" required>
+      <button type="submit">Générer le badge</button>
+    </form>
+
+    <div class="badge-output">
+      <canvas id="badgeCanvas" width="600" height="800"></canvas>
+      <a id="download-btn" class="btn" download="badge.png">Télécharger le badge</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
