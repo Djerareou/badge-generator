@@ -3,27 +3,23 @@ body {
   background-color: #f7f7f7;
   text-align: center;
   padding: 20px;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .container {
-  max-width: 90%; /* Plutôt que de fixer la largeur à 700px, on met 90% pour la rendre plus fluide */
+  max-width: 700px;
   margin: auto;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
 }
 
 input[type="text"],
 input[type="file"] {
   display: block;
   margin: 10px auto;
-  padding: 12px; /* Augmenter la taille pour une meilleure expérience sur mobile */
-  width: 100%; /* Prendre toute la largeur disponible */
-  max-width: 400px; /* Limiter la largeur maximale des champs pour éviter qu'ils ne s'étalent trop sur les grands écrans */
+  padding: 10px;
+  width: 80%;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: 'Rajdhani', sans-serif;
@@ -33,7 +29,7 @@ button {
   background-color: #e91e63;
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
@@ -48,9 +44,6 @@ canvas {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 100%; /* Le canvas prendra 100% de la largeur disponible */
-  max-width: 600px; /* Limiter la largeur maximale du canvas */
-  height: auto; /* Ajuster la hauteur automatiquement pour conserver les proportions */
 }
 
 #download-btn {
@@ -73,44 +66,4 @@ canvas {
   background: linear-gradient(135deg, #c2185b, #ec407a);
   box-shadow: 0 6px 16px rgba(233, 30, 99, 0.6);
   transform: scale(1.05);
-}
-
-/* Media Queries pour les petits écrans (smartphones) */
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 15px;
-  }
-
-  input[type="text"],
-  input[type="file"] {
-    width: 95%; /* Pour les petits écrans, laisser plus d'espace */
-  }
-
-  button {
-    width: 100%; /* Le bouton occupera toute la largeur sur mobile */
-    padding: 14px;
-    font-size: 18px;
-  }
-
-  #download-btn {
-    width: 100%;
-    padding: 14px;
-    font-size: 18px;
-  }
-}
-
-/* Media Queries pour les écrans moyens (tablettes) */
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 25px;
-  }
-
-  input[type="text"],
-  input[type="file"] {
-    width: 90%; /* Légèrement moins large que sur mobile */
-  }
-
-  button {
-    padding: 14px 28px;
-  }
 }
